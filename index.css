@@ -1,0 +1,18 @@
+p {
+	color: rgb(2, 47, 8);
+}
+
+h1 {
+	text-shadow: rgb(36, 104, 52) 1px 0 10px;
+	background-color: #0c3308;
+	color:#effff2;
+
+}
+
+h2 {
+	/*border: solid 1px black;*/
+	margin: 5px;
+	font-family: cursive;
+	color:#0c3308;
+	background: linear-gradient(0.25turn, rgb(235, 255, 225), #9ce6a5);
+}
