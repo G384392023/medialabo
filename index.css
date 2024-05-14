@@ -4,20 +4,20 @@ p {
 
 h1 {
 	text-shadow: rgb(36, 104, 52) 1px 0 10px;
-	background-color: #0c3308;
+	background-color: #0b7000;
 	color:#effff2;
 
 }
 
 h2 {
 	
-    border:  rgb(#0c3308);
+    border:  rgb(#0b7000);
 	margin: 5px;
 	font-family: cursive;
 	color:#0c3308;
-	background: linear-gradient(0.25turn, rgb(243, 251, 239), #3a523c);
+	background: linear-gradient(0.25turn, rgb(243, 251, 239), #0b7000);
 }
 h3{
     color:#021300;
-    border: solid 5px black;
+    border: solid 2px rgb(#0b7000);
 }
