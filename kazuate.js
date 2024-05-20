@@ -47,10 +47,10 @@ function hantei() {
                 console.log('答えは'+kotae+'でした.すでにゲームは終わっています。');
             }
             else if(yoso!==kotae){
-                if(yoso<kotae){
+                if(yoso<kotae&&A!==3){
                     console.log('まちがい．答えはもっと大きいですよ');
                 }
-                else if(yoso>kotae){
+                else if(yoso>kotae&&A!==3){
                     console.log('まちがい．答えはもっと小さいですよ')
                 }
                 else if(A===3){
