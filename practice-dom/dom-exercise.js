@@ -23,16 +23,42 @@ h2.insertAdjacentElement('afterend',p);
 
 // 練習4-3 写真表作成プログラム
 let div = document.querySelector('div#phototable'); 
-let p=document.createElement('p');
-let img = document.createElement('img'); 
-img.srg='taro.png';
-p.insertAdjacentElement('afterend', img);
-div.nsertAdjacentElement('afterend',p);
+let p1=document.createElement('p');
+let img = document.createElement('img');
+img.src='taro.png';
+p1.insertAdjacentElement('beforeend',img);
+div.insertAdjacentElement('beforeend',p1);
+
+let p2=document.createElement('p');
+let img1 = document.createElement('img');
+img1.src='jiro.png';
+p2.insertAdjacentElement('beforeend',img1);
+div.insertAdjacentElement('beforeend',p2);
+
+let p3=document.createElement('p');
+let img2 = document.createElement('img');
+img2.src='hanako.png';
+p3.insertAdjacentElement('beforeend',img2);
+div.insertAdjacentElement('beforeend',p3);
+
+
 
 
 
 // 練習4-4 箇条書き削除プログラム
-
+/*w = document.querySelector('ul#location>l1');         // li#whale 要素を検索
+w.remove();  */
+let w = document.querySelectorAll('ul#location>li'); 
+ for (let n of w) { 
+	n.remove();  
+ }
 
 // 練習4-5 箇条書き追加プログラム
-
+let ul = document.querySelectorAll('ul#location'); 
+let li;
+for (let n of data) { 
+	li=document.createElement('li');
+	console.log(n.lat)+console.log(n.lng);
+ }
+ ul.insertAdjacentElement('beforeend',li);
+ /*ido.insertAdjacentElement('beforeend',li);*/
