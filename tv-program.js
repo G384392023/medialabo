@@ -39,6 +39,7 @@ let data = {
           "0504"
         ]
       },
+      
       {
         "id": "2022030427069",
         "event_id": "27069",
@@ -80,4 +81,10 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-
+console.log(data.list.g1[0].start_time); 
+console.log(data.list.g1[0].end_time); 
+console.log(data.list.g1[0].service.name); 
+console.log(data.list.g1[0].title); 
+console.log(data.list.g1[0].subtitle); 
+console.log(data.list.g1[0].content); 
+console.log(data.list.g1[0].act); 
