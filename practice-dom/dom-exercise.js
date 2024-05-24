@@ -54,11 +54,16 @@ let w = document.querySelectorAll('ul#location>li');
  }
 
 // 練習4-5 箇条書き追加プログラム
-let ul = document.querySelectorAll('ul#location'); 
+let ul =document.querySelector('ul#location');
+let p6 = document.createElement('p');
+
 let li;
 for (let n of data) { 
 	li=document.createElement('li');
-	console.log(n.lat)+console.log(n.lng);
+	let p6 = document.createElement('p');
+	p6.textContent = n.name+'.....緯度'+n.lat+'  軽度'+n.lng;
+	li.insertAdjacentElement('beforeend',p6);
+	ul.insertAdjacentElement('beforeend',li);
  }
- ul.insertAdjacentElement('beforeend',li);
+
  /*ido.insertAdjacentElement('beforeend',li);*/
