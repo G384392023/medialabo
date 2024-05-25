@@ -5,18 +5,27 @@ console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 0;
 let A=1;
 let S=0;
+let yoso;
+let yoso1;
+let io;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
+/*hantei();
 hantei();
 hantei();
-hantei();
-hantei();
+hantei();*/
+let k =document.querySelector('button#print');
+k.addEventListener('click',hantei);
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = 4;
+  /*yoso = kotae1;*/
+  io=document.querySelector('input[name="kazu"]');
+    yoso=io.value;
+    yoso1=Number(yoso);//整数
+    console.log(yoso1);
   
   // 課題3-1: 正解判定する
   
