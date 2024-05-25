@@ -21,11 +21,10 @@ k.addEventListener('click',hantei);
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  /*yoso = kotae1;*/
   io=document.querySelector('input[name="kazu"]');
-    yoso=io.value;
-    yoso1=Number(yoso);//整数
-    console.log(yoso1);
+    yoso1=io.value;
+    yoso=Number(yoso1);//整数
+    console.log(yoso);
   
   // 課題3-1: 正解判定する
   
