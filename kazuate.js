@@ -78,4 +78,8 @@ function hantei() {
 
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
+  let h2 = document.querySelector('span#kaisu');
+  let p = document.createElement('p');  
+  p.textContent =A+'回目の予想：'+yoso; 
+  h2.insertAdjacentElement('beforeend',p);
 }
