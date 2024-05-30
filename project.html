@@ -5,48 +5,81 @@
     <title>検索結果を表示する</title>
     <link rel="stylesheet" href="project.css">
     <script src="project.js" defer></script>
-    <meta charset="utf-8">
-    <title>NHKの番組表</title>
     <script src="tv-program.js" defer></script>
+    <meta charset="utf-8">
+
+    <title >NHKの番組表</title>
+    
+
     </head>
     <body>
         <!--自分が選んだのは、NHK の番組表-->
-        <h2>
-            <p >検索：
-                <class="a">　NHKの番組表</class></p>
-        </h2>
-        <h3>NHKの番組表（検索結果２件）</h3>
+        <h1><class="a">番組表はこちら！！</class></h1>
+        <div id="time"></div>
+        <h2><class="taitle">
+            <label for="TV1">チャンネル: </label></class>
+            <input type="text" name="TV1" size="15">
 
-        <table border="1" width="1200">
+        </h2>
+        <h2><class="youbi">
+        <div>
+            <input type="checkbox" name="youbi" id="getu" value="月曜日">
+            <label for="getu">月曜日</label>
+        </div>
+        <div>
+            <input type="checkbox" name="youbi" id="ka" value="火曜日">
+            <label for="ka">火曜日</label>
+        </div>
+        <div>
+            <input type="checkbox" name="youbi" id="sui" value="水曜日">
+            <label for="sui">水曜日</label>
+        </div>
+        <div>
+            <input type="checkbox" name="youbi" id="moku" value="木曜日">
+            <label for="moku">木曜日</label>
+        </div>
+        <div>
+            <input type="checkbox" name="youbi" id="kin" value="金曜日">
+            <label for="kin">金曜日</label>
+        </div>
+       <div>
+            <input type="checkbox" name="youbi" id="do" value="土曜日">
+            <label for="do">土曜日</label>
+       </div>
+        <div>
+            <input type="checkbox" name="youbi" id="niti" value="日曜日">
+            <label for="niti">日曜日</label>
+       </div>
+        <div>
+            <button id="answer">検索</button>
+        </div>
+    </class>
+    </h2><class="youbi">
+    <h3><class="d">NHKの番組表（検索結果２件）</class></h3>
+
+        <table border="1" width="1000">
             <tr>
-                <th><P></P></th>
-                <th><strong>検索結果１件目</strong></th>
-                <th><strong>検索結果２件目</strong></th>
+                <strong>検索結果１件目</strong>
             </tr>
             <tr>
                 <td ><strong >番組名</strong ></td>
                 <td>ブギウギ</td>
-                <td>チコちゃんに叱られる！</td>  
             </tr>  
             <tr>
                 <td ><strong >サブタイトル</strong></td>
                 <td>記載なし</td>
-                <td>素朴な疑問に、あなたは答えられますか？　いよいよ7年目に突入！</td>
             </tr>
             <tr>
                 <td ><strong >日にち</strong></td>
                 <td>毎週月〜土曜日</td>
-                <td>毎週金曜</td>
             </tr> 
             <tr>
-                <td><strong >放送時間</strong></td>
+                <td><strong>放送時間</strong></td>
                 <td>午前８時～８時15分</td>
-                <td>午後７時57分</td>
             </tr> 
             <tr>
                 <td><strong >主題歌</strong></td>
                 <td>「ハッピー☆ブギ」</td>
-                <td>カリキュラマシーンのテーマ</td>
             </tr> 
             <tr>
             
@@ -54,44 +87,78 @@
                 <td><strong >番組説明</strong></td>
                 <td>戦後を明るく照らしたスター歌手の物語
                 </td>
-                <td>いままで考えたこともなかった疑問と情報が知れる</td>
             </tr> 
             
             <tr>
                 <td><strong >チャンネル名</strong></td>
                 <td>NHK</td>
-                <td>NHK</td>
             </tr><tr>
                 <td><strong >ジャンル</strong></td>
                 <td>連続テレビ小説</td>
-                <td>教養バラエティ</td>
             </tr>  
             <tr>
                 <td ><strong >注目度</strong></td>
                 <td>67.6%</td>
-                <td>61.2%</td>
             </tr>
             <tr>
                 <td ><strong >脚本</strong></td>
                 <td>足立紳 櫻井剛</td>
-                <td>諏訪 雅</td>
             </tr>
-            <tr>
-                <td ><strong >参考資料</strong></td>
-                <td>https://www.nhk.jp/p/boogie/ts/NLPYVZYM29/</td>
-                <td>https://www.nhk.jp/p/chicochan/ts/R12Z9955V3/</td>
-            </tr>
-            <tr>
-                <td ></td>
-                <td><img src="https://nhk-groupmall.jp/cdn/shop/files/NBK-6923606.jpg?v=1703749322" alt="ブギウギ" width="400"></td>
-                <td><img src="https://www.shogakukan.co.jp/thumbnail/snsbooks/09388670" alt="チコちゃんに怒られる" width="300"></td>
-            </tr>
+
+            <table border="1" width="1000">
+                <tr>
+                    <strong>検索結果2件目</strong>
+                </tr>
+                <tr>
+                    <td ><strong >番組名</strong ></td>
+                    <td>チコちゃんに叱られる！</td>  
+                </tr>  
+                <tr>
+                    <td ><strong >サブタイトル</strong></td>
+                    <td>素朴な疑問に、あなたは答えられますか？　いよいよ7年目に突入！</td>
+                </tr>
+                <tr>
+                    <td ><strong >日にち</strong></td>
+                    <td>毎週金曜</td>
+                </tr> 
+                <tr>
+                    <td><strong>放送時間</strong></td>
+                    <td>午後７時57分</td>
+                </tr> 
+                <tr>
+                    <td><strong >主題歌</strong></td>
+                    <td>カリキュラマシーンのテーマ</td>
+                </tr> 
+                <tr>
+                
+                <tr>
+                    <td><strong >番組説明</strong></td>
+                    <td>いままで考えたこともなかった疑問と情報が知れる</td>
+                </tr> 
+                
+                <tr>
+                    <td><strong >チャンネル名</strong></td>
+                    <td>NHK</td>
+                </tr><tr>
+                    <td><strong >ジャンル</strong></td>
+                    <td>教養バラエティ</td>
+                </tr>  
+                <tr>
+                    <td ><strong >注目度</strong></td>
+                    <td>61.2%</td>
+                </tr>
+                <tr>
+                    <td ><strong >脚本</strong></td>
+                    <td>諏訪 雅</td>
+                </tr>
+
+
         </table>
         <!--<dt><li>検索結果　１件目 
         </li></dt>
         <dd>
             
         </dd>-->
-
+        <div id="result"></div>
     </body>
 </html>

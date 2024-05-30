@@ -87,4 +87,51 @@ console.log(data.list.g1[0].service.name);
 console.log(data.list.g1[0].title); 
 console.log(data.list.g1[0].subtitle); 
 console.log(data.list.g1[0].content); 
-console.log(data.list.g1[0].act); 
+console.log(data.list.g1[0].act);
+console.log(data.list.g1[0].id);
+console.log(data.list.g1[0].genres);
+
+let h = document.querySelector('div#time');
+let p = document.createElement('p');  
+p.textContent =(data.list.g1[0].genres); 
+h.insertAdjacentElement('afterend',p);
+
+let h1 = document.querySelector('div#time');
+let p1 = document.createElement('p');  
+p1.textContent =(data.list.g1[0].id); 
+h1.insertAdjacentElement('afterend',p1);
+
+let h2 = document.querySelector('div#time');
+let p2 = document.createElement('p');  
+p2.textContent =(data.list.g1[0].act); 
+h2.insertAdjacentElement('afterend',p2);
+
+let h3 = document.querySelector('div#time');
+let p3 = document.createElement('p');  
+p3.textContent =(data.list.g1[0].content); 
+h2.insertAdjacentElement('afterend',p3);
+
+let h4 = document.querySelector('div#time');
+let p4 = document.createElement('p');  
+p4.textContent =(data.list.g1[0].subtitle); 
+h2.insertAdjacentElement('afterend',p4);
+
+let h5 = document.querySelector('div#time');
+let p5 = document.createElement('p');  
+p5.textContent =(data.list.g1[0].title); 
+h2.insertAdjacentElement('afterend',p5);
+
+let h6 = document.querySelector('div#time');
+let p6 = document.createElement('p');  
+p6.textContent =(data.list.g1[0].service.name); 
+h2.insertAdjacentElement('afterend',p6);
+
+let h7 = document.querySelector('div#time');
+let p7= document.createElement('p');  
+p7.textContent =(data.list.g1[0].end_time); 
+h2.insertAdjacentElement('afterend',p7);
+
+let h8 = document.querySelector('div#time');
+let p8 = document.createElement('p');  
+p8.textContent =(data.list.g1[0].start_time); 
+h2.insertAdjacentElement('afterend',p8);
