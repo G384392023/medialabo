@@ -4,6 +4,8 @@
         <meta charset="utf-8">
     <title>検索結果を表示する</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
     <script src="project.js" defer></script>
     <script src="tv-program.js" defer></script>
     <meta charset="utf-8">
@@ -15,49 +17,29 @@
     <body>
         <!--自分が選んだのは、NHK の番組表-->
         <h1><class="a">番組表はこちら！！</class></h1>
-        <div id="time"></div>
+        <!-- <div id="time"></div> -->
         <h2><class="taitle">
             <label for="TV1">チャンネル: </label></class>
-            <input type="text" name="TV1" size="15">
+            <input type="text" name="TV1" id="syousetu" value=g1 size="15">
 
         </h2>
-        <h2><class="youbi">
-        <div>
-            <input type="checkbox" name="youbi" id="getu" value="月曜日">
-            <label for="getu">月曜日</label>
-        </div>
-        <div>
-            <input type="checkbox" name="youbi" id="ka" value="火曜日">
-            <label for="ka">火曜日</label>
-        </div>
-        <div>
-            <input type="checkbox" name="youbi" id="sui" value="水曜日">
-            <label for="sui">水曜日</label>
-        </div>
-        <div>
-            <input type="checkbox" name="youbi" id="moku" value="木曜日">
-            <label for="moku">木曜日</label>
-        </div>
-        <div>
-            <input type="checkbox" name="youbi" id="kin" value="金曜日">
-            <label for="kin">金曜日</label>
-        </div>
-       <div>
-            <input type="checkbox" name="youbi" id="do" value="土曜日">
-            <label for="do">土曜日</label>
-       </div>
-        <div>
-            <input type="checkbox" name="youbi" id="niti" value="日曜日">
-            <label for="niti">日曜日</label>
-       </div>
-        <div>
+        <h2><class="TV2">
+            <label>
+                <input type="checkbox" name="TV2" id="syousetu" value="ジャンル：0300">
+                <label for="syousetu">朝ドラ</label>
+                <input type="checkbox" name="TV2" id="anime" value="ジャンル：0700">
+                <label for="anime">アニメ</label>
+                <input type="checkbox" name="TV2" id="baraet" value="ジャンル：0502">
+                <label for="game">教養バラエティ</label>
+            <label> 
+
             <button id="answer">検索</button>
         </div>
     </class>
     </h2><class="youbi">
     <h3><class="d">NHKの番組表（検索結果２件）</class></h3>
 
-        <table border="1" width="1000">
+        <table border="1" width="1400">
             <tr>
                 <strong>検索結果１件目</strong>
             </tr>
@@ -70,25 +52,14 @@
                 <td>記載なし</td>
             </tr>
             <tr>
-                <td ><strong >日にち</strong></td>
-                <td>毎週月〜土曜日</td>
-            </tr> 
-            <tr>
                 <td><strong>放送時間</strong></td>
                 <td>午前８時～８時15分</td>
             </tr> 
-            <tr>
-                <td><strong >主題歌</strong></td>
-                <td>「ハッピー☆ブギ」</td>
-            </tr> 
-            <tr>
-            
             <tr>
                 <td><strong >番組説明</strong></td>
                 <td>戦後を明るく照らしたスター歌手の物語
                 </td>
             </tr> 
-            
             <tr>
                 <td><strong >チャンネル名</strong></td>
                 <td>NHK</td>
@@ -97,15 +68,11 @@
                 <td>連続テレビ小説</td>
             </tr>  
             <tr>
-                <td ><strong >注目度</strong></td>
-                <td>67.6%</td>
-            </tr>
-            <tr>
-                <td ><strong >脚本</strong></td>
-                <td>足立紳 櫻井剛</td>
+                <td ><strong >出演者</strong></td>
+                <td>・趣里・菊地凛子・清水くるみ・影山泰・蒼井優　など、</td>
             </tr>
 
-            <table border="1" width="1000">
+            <table border="1" width="1400">
                 <tr>
                     <strong>検索結果2件目</strong>
                 </tr>
@@ -118,19 +85,9 @@
                     <td>素朴な疑問に、あなたは答えられますか？　いよいよ7年目に突入！</td>
                 </tr>
                 <tr>
-                    <td ><strong >日にち</strong></td>
-                    <td>毎週金曜</td>
-                </tr> 
-                <tr>
                     <td><strong>放送時間</strong></td>
-                    <td>午後７時57分</td>
+                    <td>午後７時57分〜午後８時45分</td>
                 </tr> 
-                <tr>
-                    <td><strong >主題歌</strong></td>
-                    <td>カリキュラマシーンのテーマ</td>
-                </tr> 
-                <tr>
-                
                 <tr>
                     <td><strong >番組説明</strong></td>
                     <td>いままで考えたこともなかった疑問と情報が知れる</td>
@@ -144,13 +101,44 @@
                     <td>教養バラエティ</td>
                 </tr>  
                 <tr>
-                    <td ><strong >注目度</strong></td>
-                    <td>61.2%</td>
+                    <td ><strong >出演者</strong></td>
+                    <td>・岡村隆史・高橋みなみ・大竹まこと・木村祐一</td>
                 </tr>
-                <tr>
-                    <td ><strong >脚本</strong></td>
-                    <td>諏訪 雅</td>
-                </tr>
+
+                <table border="1" width="1400">
+                    <tr>
+                        <strong>検索結果3件目</strong>
+                    </tr>
+                    <tr>
+                        <td ><strong >番組名</strong ></td>
+                        <td>キングダム</td>  
+                    </tr>  
+                    <tr>
+                        <td ><strong >サブタイトル</strong></td>
+                        <td>KINGDOM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>放送時間</strong></td>
+                        <td>午前0時〜午前0時30分</td>
+                    </tr> 
+                    <tr>
+                        <td><strong >番組説明</strong></td>
+                        <td>武功をあげて「天下の大将軍」になることを夢見る少年・信（しん）と、
+                            後に中華統一を果たすことになる始皇帝・政（せい）の成長と戦いを描く、熱い歴史漫画です</td>
+                    </tr> 
+                    
+                    <tr>
+                        <td><strong >チャンネル名</strong></td>
+                        <td>NHK</td>
+                    </tr><tr>
+                        <td><strong >ジャンル</strong></td>
+                        <td>アニメ</td>
+                    </tr>  
+                    <tr>
+                        <td ><strong >出演者</strong></td>
+                        <td>・信（森田成一）・政（福山潤）・河了貂（釘宮理恵）など</td>
+                    </tr>
 
 
         </table>

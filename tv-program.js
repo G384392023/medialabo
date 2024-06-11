@@ -91,47 +91,48 @@ console.log(data.list.g1[0].act);
 console.log(data.list.g1[0].id);
 console.log(data.list.g1[0].genres);
 
-let h = document.querySelector('div#time');
-let p = document.createElement('p');  
-p.textContent =(data.list.g1[0].genres); 
-h.insertAdjacentElement('afterend',p);
 
-let h1 = document.querySelector('div#time');
-let p1 = document.createElement('p');  
-p1.textContent =(data.list.g1[0].id); 
-h1.insertAdjacentElement('afterend',p1);
+let h9 = document.querySelector('div#result');
+let p9 = document.createElement('p');  
+p9.textContent =(data.list.g1[0].genres); 
+h9.insertAdjacentElement('afterend',p9);
 
-let h2 = document.querySelector('div#time');
-let p2 = document.createElement('p');  
-p2.textContent =(data.list.g1[0].act); 
-h2.insertAdjacentElement('afterend',p2);
+let hh = document.querySelector('div#result');
+let pp = document.createElement('p');  
+pp.textContent =(data.list.g1[0].id); 
+hh.insertAdjacentElement('afterend',pp);
 
-let h3 = document.querySelector('div#time');
-let p3 = document.createElement('p');  
-p3.textContent =(data.list.g1[0].content); 
-h2.insertAdjacentElement('afterend',p3);
+let hh2 = document.querySelector('div#result');
+let pp2 = document.createElement('p');  
+pp2.textContent =(data.list.g1[0].act); 
+hh2.insertAdjacentElement('afterend',pp2);
 
-let h4 = document.querySelector('div#time');
-let p4 = document.createElement('p');  
-p4.textContent =(data.list.g1[0].subtitle); 
-h2.insertAdjacentElement('afterend',p4);
+let hh3 = document.querySelector('div#result');
+let pp3 = document.createElement('p');  
+pp3.textContent =(data.list.g1[0].content); 
+hh2.insertAdjacentElement('afterend',pp3);
 
-let h5 = document.querySelector('div#time');
-let p5 = document.createElement('p');  
-p5.textContent =(data.list.g1[0].title); 
-h2.insertAdjacentElement('afterend',p5);
+let hh4 = document.querySelector('div#result');
+let pp4 = document.createElement('p');  
+pp4.textContent =(data.list.g1[0].subtitle); 
+hh2.insertAdjacentElement('afterend',pp4);
 
-let h6 = document.querySelector('div#time');
-let p6 = document.createElement('p');  
-p6.textContent =(data.list.g1[0].service.name); 
-h2.insertAdjacentElement('afterend',p6);
+let hh5 = document.querySelector('div#result');
+let pp5 = document.createElement('p');  
+pp5.textContent =(data.list.g1[0].title); 
+hh2.insertAdjacentElement('afterend',pp5);
 
-let h7 = document.querySelector('div#time');
-let p7= document.createElement('p');  
-p7.textContent =(data.list.g1[0].end_time); 
-h2.insertAdjacentElement('afterend',p7);
+let hh6 = document.querySelector('div#result');
+let pp6 = document.createElement('p');  
+pp6.textContent =(data.list.g1[0].service.name); 
+hh2.insertAdjacentElement('afterend',pp6);
 
-let h8 = document.querySelector('div#time');
-let p8 = document.createElement('p');  
-p8.textContent =(data.list.g1[0].start_time); 
-h2.insertAdjacentElement('afterend',p8);
+let hh7 = document.querySelector('div#result');
+let pp7= document.createElement('p');  
+pp7.textContent =(data.list.g1[0].end_time); 
+hh2.insertAdjacentElement('afterend',pp7);
+
+let hh8 = document.querySelector('div#result');
+let pp8 = document.createElement('p');  
+pp8.textContent =(data.list.g1[0].start_time); 
+hh2.insertAdjacentElement('afterend',pp8);
