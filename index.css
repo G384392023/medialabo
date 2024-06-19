@@ -39,9 +39,13 @@ a:link {
   }
   P{
 	font-size: 120%;
-	background-color:#d4f3d0;
-	color:rgb(32, 56, 28)
+	background-color:#daf0d7;
+	color:rgb(19, 40, 16)
   }
-  p.at{
+  p.caution{
 	line-height: 150%;
+  }
+  .time{
+	text-align: center;
+	font-size: 200%;
   }
