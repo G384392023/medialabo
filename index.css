@@ -48,4 +48,8 @@ a:link {
   .time{
 	text-align: center;
 	font-size: 200%;
+	font-weight: bold;
+  }
+  .end{
+	text-emphasis-color: rgba(0, 255, 162, 0.8);
   }
