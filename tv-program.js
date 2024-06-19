@@ -184,7 +184,7 @@ h.insertAdjacentElement("beforeend",keka);
 
 let kennsaku=document.createElement("h");
 kennsaku.setAttribute("class","kennsaku");
-kennsaku.textContent="こちらです！！";
+// kennsaku.textContent="こちらです！！";
 h.insertAdjacentElement("beforeend",kennsaku);
 
 
@@ -428,6 +428,7 @@ function kensaku(){
   for (let c of cs) {
     if (c.checked) {
       keka.textContent="NHKの番組表（検索結果1件）";
+      kennsaku.textContent="こちらです！！";
       bugi.setAttribute("border","1");
       bugi.setAttribute("width","1400");
       bugi1.textContent="番組名";
@@ -451,6 +452,7 @@ function kensaku(){
     if (c.checked) {
       //結果２
       keka.textContent="NHKの番組表（検索結果1件）";
+      kennsaku.textContent="こちらです！！";
       ban.setAttribute("border","1");
       ban.setAttribute("width","1400");
       ban1.textContent="番組名";
@@ -473,6 +475,7 @@ function kensaku(){
     if (c.checked) {
       //結果３
       keka.textContent="NHKの番組表（検索結果1件）";
+      kennsaku.textContent="こちらです！！";
       ani.setAttribute("border","1");
       ani.setAttribute("width","1400");
       ani1.textContent="番組名";
