@@ -1,12 +1,28 @@
-
 .a{
-    border:  rgb(#0b7000);
+    border: rgb(#0b7000);
 }
 
 h3{
     background-color:#0b7000;
     color:#effff2;
 }
+.d{
+    background-color:#0b7000;
+    color:#effff2;
+}
 .td{
     text-shadow: rgb(36, 104, 52) 1px 0 10px;
+}
+tr{
+    color: rgb(1, 35, 1);
+    background-color:#b1c8ae;
+    font-size: 150%;
+}
+.kensaku{
+    font-size: 200%;
+}
+#ansewr{
+    font-size: 150%;
+    color: rgb(1, 35, 1);
+    background-color:#b1c8ae;
 }

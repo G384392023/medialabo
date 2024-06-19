@@ -92,11 +92,6 @@ let a1=document.createElement("h2");
 a1.setAttribute("class","taitle");
 h.insertAdjacentElement("beforeend",a1);
 
-// let a2=document.createElement("label");
-// a2.setAttribute("for","TV1");
-// a2.textContent="番組名：";
-// a1.insertAdjacentElement("beforeend",a2);
-
 // let a3=document.createElement("input");
 // a3.setAttribute("type","text");
 // a3.setAttribute("name","TV1");
