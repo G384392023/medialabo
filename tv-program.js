@@ -178,7 +178,7 @@ b.addEventListener('click', sendRequest);//通信
 
 let keka=document.createElement("h3");
 keka.setAttribute("class","d");
-keka.textContent="NHKの番組表（検索結果1件）";
+// keka.textContent="NHKの番組表（検索結果1件）";
 h.insertAdjacentElement("beforeend",keka);
 //検索結果１
 
@@ -427,6 +427,7 @@ function kensaku(){
   let cs3 = document.querySelectorAll('input[size="0502"]');
   for (let c of cs) {
     if (c.checked) {
+      keka.textContent="NHKの番組表（検索結果1件）";
       bugi.setAttribute("border","1");
       bugi.setAttribute("width","1400");
       bugi1.textContent="番組名";
@@ -449,6 +450,7 @@ function kensaku(){
   for (let c of cs2) {
     if (c.checked) {
       //結果２
+      keka.textContent="NHKの番組表（検索結果1件）";
       ban.setAttribute("border","1");
       ban.setAttribute("width","1400");
       ban1.textContent="番組名";
@@ -470,6 +472,7 @@ function kensaku(){
   for (let c of cs3) {
     if (c.checked) {
       //結果３
+      keka.textContent="NHKの番組表（検索結果1件）";
       ani.setAttribute("border","1");
       ani.setAttribute("width","1400");
       ani1.textContent="番組名";
