@@ -156,7 +156,7 @@ aa2.setAttribute("id","liset");
 aa2.textContent="リセット";
 li.insertAdjacentElement("beforeend",aa2);
 let kome=document.createElement("h2");
-kome.setAttribute("class","TV2");
+kome.setAttribute("class","tv");
 kome.textContent="2件目以降はリセットを押してから検索してください m(--)m";
 li.insertAdjacentElement("beforeend",kome);
 
